@@ -46,8 +46,31 @@ else
 {
     Console.Write($"{num} -> Нет ");
 }
-
 */
 
 //Задача 4. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
+
+Console.Write("Input number: ");
+double num = Convert.ToInt32(Console.ReadLine());
+double current = 1;
+Console.WriteLine($"Positive number from 1 to {num}");
+while (current<= num)
+{
+    if (current % 2 == 0) 
+    {
+        Console.Write(current + ", ");
+    }
+    current++;
+}
+
+    
+    
+    
+
+/*
+{
+    Console.Write (current + " ");
+    current++;
+}
+*/
