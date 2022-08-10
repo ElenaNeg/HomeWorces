@@ -63,14 +63,3 @@ while (current<= num)
     }
     current++;
 }
-
-    
-    
-    
-
-/*
-{
-    Console.Write (current + " ");
-    current++;
-}
-*/
