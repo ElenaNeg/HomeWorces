@@ -1,10 +1,25 @@
-﻿
+﻿/*
 // Задача 19. Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 // 14212 -> нет
 // 12821 -> да
 // 23432 -> да
 
-
+void IsPalindrome(int number)
+{
+    int number1 = (number % 100000) / 10000;
+    int number2 = (number % 10000) / 1000;
+    int number4 = (number % 100) / 10;
+    int number5 = number % 10;
+    
+    if( number1 == number5 && number2 == number4)
+        Console.WriteLine($"This number {number} palindrome");  
+    else
+        Console.WriteLine($"This number {number} is not a palindrome");     
+}
+Console.Write("Input a five-digit number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+IsPalindrome(num);
+*/
 /*
 // Задача 21. Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
@@ -41,7 +56,8 @@ void CubeSquare(int n)
     int current = 1;
     while (current <= n)
     {
-        Console.WriteLine($"Cube number {current} = {current * current * current}:");
+        Console.WriteLine($"Cube number {current} = {Math.Pow(current, 3)}:");
+        //Console.WriteLine($"Cube number {current} = {current * current * current}:");
         current++;
     }
 }
@@ -49,3 +65,4 @@ Console.Write("Input whole number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 CubeSquare(number);
 */
+
