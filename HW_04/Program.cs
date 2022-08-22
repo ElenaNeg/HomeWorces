@@ -49,7 +49,7 @@ int[] CreateArray(int size)
     int[] newArray = new int[size];
     for (int i = 0; i < size; i++)
     {
-        Console.Write("Введите элемент массива: ");
+        Console.Write("Input an array element: ");
         newArray[i] = Convert.ToInt32(Console.ReadLine());
     }
     return newArray;   
@@ -59,11 +59,10 @@ void ShowArray(int[] array)
 {
     for(int i = 0; i < array.Length; i++)
         Console.Write(array[i] + ",");
-    
     Console.WriteLine ();
 }
 
-Console.WriteLine("Введите длину массива: ");
+Console.WriteLine("Input the length of the array: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
 int[] myArray = CreateArray(a);
