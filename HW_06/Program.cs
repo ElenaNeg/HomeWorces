@@ -35,7 +35,7 @@ int[] myArray = CreateArray(length);
 ShowArray(myArray);
 Console.Write($"Number of positive numbers = {PositiveNumbers(myArray)}");
 */
-/*
+
 // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
 // заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 
 // задаются пользователем.
@@ -45,14 +45,8 @@ void LinearFunction(double b1, double k1, double b2, double k2)
 {
     double x = (b2 - b1) / (k1 - k2);
     double y = k1 * x + b1;
-    if (b1 == b2)
-    {
-        Console.WriteLine("the lines don't intersect they are parallel");
-    }
-    else 
-    {
-        Console.WriteLine($"Point of intersection of lines {x} {y}");
-    }
+    
+    Console.WriteLine($"The point of intersection of two straight lines ({x}, {y})");
 }
 
 Console.WriteLine("Input constant b1: ");
@@ -68,4 +62,4 @@ Console.WriteLine("Input constant k2: ");
 int constantk2 = Convert.ToInt32(Console.ReadLine());
 
 LinearFunction(constantb1, constantk1, constantb2, constantk2);
-*/
+
